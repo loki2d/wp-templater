@@ -1,0 +1,42 @@
+.articlelist-container{
+  width: 530px;
+}
+.articlelist{
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-align: stretch;
+  justify-content: space-between;
+}
+.articlelist__title {
+  position: relative;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  margin: 25px 0 18px 20px;
+  width: calc(100% - 20px);
+  z-index: 20;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.articlelist__title::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #d2d2d2;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+  z-index: 10;
+}
+
+.articlelist__title-bg{
+  position: relative;
+  display: inline-block;
+  padding-right: 30px;
+  z-index: 20;
+  background: #fff;
+
+}

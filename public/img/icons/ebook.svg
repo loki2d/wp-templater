@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.3.2-ea60620 - http://avocode.com -->
+<svg height="18" width="14" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 18">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="none" fill-rule="evenodd" d="M 0 2 C 0 0.89 0.9 0 2.01 0 L 11.99 0 C 13.1 0 14 0.89 14 2 L 14 16 C 14 17.11 13.1 18 11.99 18 L 2.01 18 C 0.9 18 0 17.11 0 16 L 0 2 Z M 0 2" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="none" fill-rule="evenodd" d="M 11 8 L 12 8 L 12 0 L 6 0 L 6 8 L 7 8 L 9 6 L 11 8 Z M 11 8" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="#d8d8d8" fill-rule="evenodd" d="M 2 5 L 5 5 L 5 6 L 2 6 L 2 5 Z M 2 5" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="#d8d8d8" fill-rule="evenodd" d="M 2 7 L 5 7 L 5 8 L 2 8 L 2 7 Z M 2 7" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="#d8d8d8" fill-rule="evenodd" d="M 2 9 L 12 9 L 12 10 L 2 10 L 2 9 Z M 2 9" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="#d8d8d8" fill-rule="evenodd" d="M 2 11 L 12 11 L 12 12 L 2 12 L 2 11 Z M 2 11" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#979797" fill="#d8d8d8" fill-rule="evenodd" d="M 2 13 L 12 13 L 12 14 L 2 14 L 2 13 Z M 2 13" />
+</svg>

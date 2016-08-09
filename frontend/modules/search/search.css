@@ -1,0 +1,40 @@
+.formSearch {
+	position: fixed;
+	display: block;
+	right: 20px;
+	top: 14px;
+	z-index: 125;
+}
+
+.compact .formSearch { opacity: 0; }
+
+.all_search-inp input[type="text"] {
+	width: 80px;
+	background: none !important;
+	border: 1px solid #d2d2d2;
+	box-shadow: none;
+	color: #9b9b9b;
+	font-family: "Open Sans";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	padding: 15px 40px 15px 20px !important;
+	/* Text style for "ПОИСК" */
+	letter-spacing: 0.5px;
+
+}
+
+.all_search-inp input[type="text"]:hover, .all_search-inp input[type="text"]:focus { border: 1px solid #26b9ff; width: 80px; }
+
+
+.all_search-inp .inp_subm {
+
+	height: 39px;
+	width: 54px;
+	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAABzElEQVQ4T72Vv4saURDH57vrgsUpHJJCUliFFIeNRa6KSbhUNkEhXHGFEFjZSrh/40ob17eVkCaNksbqQnIGDq6xkUCOqywOiyABvWJh2TfHyBnEX8Qzmwevm/nsd76zMw/0F8d13SPDMI4B5Jn5qaQAuGXmrtb6k+M4XxYx2MR1XfeZYRgegFeb4pj5QmttO45zM4tbC/Y87yUzfwawb1kWZ7NZZDIZSiaT09zxeEyDwYD6/T4HQQBm/g3gnW3b36cVrVLyoPRKoOl0mvL5PCUSiZWiJ5MJdbtdGg6HJHCt9aEoXwlWSn2T8gVaKBTEz42dYGbqdDoz+EWlUnm9lCGNMk3zXMovlUpYp3TxS6K81WpNbQnD8O0SWCmlANi5XI7kbnN6vR7JZWZvCex53k8iel4sFimVSm3DpdFoRO12W3KuVymeANgrl8tkWdZW4CAIqNlsiuK7/weO0opomhfZ7ybdimRABFyv11/EYrFLIjL/2UjXarUn8Xj8K4ADIgoFvvMSmocy848wDD+Ypnm209pchPq+/6Zarf4Sax696DdBtxq9uWBEAZ0ueqXURwAn4ul8+Y9V+udpajQa7+VJ8X3/dObprlDJvwdUcF3gQJ7a2gAAAABJRU5ErkJggg==") center center no-repeat;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}

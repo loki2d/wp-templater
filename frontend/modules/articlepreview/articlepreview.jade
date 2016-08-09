@@ -1,0 +1,13 @@
+- each item in items
+  article( class="articlepreview #{item.viwetype}")
+    -if(item.picture){
+    a.articlepreview__picture-link(href="/article")
+      img.articlepreview__picture(src="#{item.picture}" alt="title")
+    -}else{
+    a.articlepreview__time-link(href="/article")
+      time= item.time
+    -}
+    a.articlepreview__text-link(href="/article")
+      h1.articlepreview__title= item.title
+      h2.articlepreview__subtitle= item.subtitle
+    

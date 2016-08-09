@@ -1,0 +1,28 @@
+.article-floatTitle
+  span.article-floatTitle__theme #{article.theme}: 
+  span.article-floatTitle__title #{article.title}
+  div.share
+-if(article.picture){
+  article.article.whith-picture
+-}else{
+  article.article
+-} 
+  .article-header.whith-picture
+    time.article-header__time
+      span.article-header__date-dey= article.date
+      span.article-header__date-time= article.time
+      
+    .article-header__tags= article.theme
+
+    .article-header__comments-btn= article.commentsCounter
+      
+  .article__body
+    .article__body-head
+      .article__author
+        a.article__author-link(title="Страница автора", href= article.author.url )= article.author.name
+        button.resizeFS(title="Изменить размер шрифта") Aa
+    header.article__header
+      h1.article__title= article.title
+      h2.article__subtitle= article.subtitle
+    .article__content !{article.content}
+    .share-block(data-id="wpm-share")

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.6.0 - http://avocode.com -->
+<svg height="21" width="26" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 21">
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#000000" fill="none" fill-rule="evenodd" d="M 1 1 L 25 1 L 25 20 L 1 20 L 1 1 Z M 1 1" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="#000000" fill="none" fill-rule="evenodd" d="M 10.23 15.4 C 12.97 15.4 15.19 13.14 15.19 10.36 C 15.19 7.58 12.97 5.32 10.23 5.32 C 7.48 5.32 5.26 7.58 5.26 10.36 C 5.26 13.14 7.48 15.4 10.23 15.4 Z M 10.23 15.4" />
+    <path fill="#565d66" fill-rule="evenodd" d="M 17.61 5 L 21.87 5 L 21.87 6 L 17.61 6 L 17.61 5 Z M 17.61 5" />
+</svg>

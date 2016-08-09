@@ -1,0 +1,13 @@
+.currency {
+    margin-left: 15px;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 23px;
+    color: #9b9b9b;
+}
+
+
+.currency { font-size: 12px; margin-left: 0; }
+
+.currency > div { margin-left: 15px; }

@@ -1,0 +1,43 @@
+.radioframe {
+    padding: 20px 0 20px 18px;
+    width: 220px;
+    height: 44px;
+    z-index: 100;
+}
+
+.radioframe .block { display: inline-block; width: 100%; }
+
+.radioframe a:first-child {
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    text-indent: -10000px;
+    cursor: pointer;
+    background: transparent url("/img/icons/play_blue.svg") no-repeat 0 0;
+    background-size: 43px auto;
+    display: block;
+    float: left;
+    margin-right: 20px;
+
+}
+
+.radioframe h2 {
+    color: #40454c;
+    text-transform: uppercase;
+    font-family: "TT Prosto Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 5px 0 0 0;
+    letter-spacing: 0.01em;
+    margin: 0px;
+}
+
+.radioframe p {
+    margin: 0px;
+    font-family: "Open Sans", Arial, sans-serif;
+    color: #9b9b9b;
+    font-size: 12px;
+    line-height: 17px;
+    zoom: 0;
+}

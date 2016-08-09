@@ -1,0 +1,148 @@
+.articlepreview{
+  clear: left;
+  padding: 20px 0px 20px 0px;
+  overflow: hidden;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  -webkit-box-pack: justify;
+  flex-flow: row wrap;
+  -webkit-box-orient: horizontal;
+
+}
+
+.articlepreview__title {
+  font-size: 17px;
+  color: #000;
+  font-family: "TT Prosto Sans";
+  font-weight: 700;
+  text-transform: none;
+}
+
+.articlepreview__subtitle{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  padding-top: 7px;
+  font-family: "Open Sans";
+  color: #40454c;
+}
+
+.articlepreview__picture{
+  display: block;
+}
+
+.articlepreview__picture-link{
+  width: 100%;
+  margin-left: 0;
+}
+
+/*В одну колонку*/
+
+.articlepreview.linex1{
+  width: 100%;
+}
+
+.articlepreview.linex1
+.articlepreview__picture-link{
+  width: calc(50% - 20px);
+  display: block;
+  margin-left: 20px;
+}
+.articlepreview.linex1
+.articlepreview__time-link{
+  width: calc(20% - 20px);
+  display: block;
+  font-size: 12px;
+  color: #0083cd;
+  padding-bottom: 5px;
+  margin-left: 20px;
+}
+
+.articlepreview.linex1
+.articlepreview__picture{
+  width: 100%;
+}
+
+
+.articlepreview.linex1
+.articlepreview__subtitle{
+  color: #40454c;
+}
+
+.articlepreview.linex1
+.articlepreview__text-link{
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d6d6d6;
+  display: block;
+  width: calc(80% - 20px);
+
+}
+
+.articlepreview.linex1
+.articlepreview__time-link+
+.articlepreview__text-link>
+.articlepreview__title {
+  font-family: "Open Sans";
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: none;
+  margin-top: 0;
+  font-size: 15px;
+}
+.articlepreview.linex1
+.articlepreview__time-link+
+.articlepreview__text-link>
+.articlepreview__subtitle {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.articlepreview.linex1
+.articlepreview__picture-link+
+.articlepreview__text-link{
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d6d6d6;
+  display: block;
+  width: calc(50% - 20px);
+  margin-left: 20px;
+}
+
+/*В 2 колонки*/
+
+.articlepreview.linex05{
+  float: left;
+  clear: none;
+  width: calc(50% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d6d6d6;
+  align-content: flex-start;
+}
+
+.articlepreview.linex05
+.articlepreview__picture{
+  width: 100%;
+}
+
+.articlepreview.linex05
+.articlepreview__subtitle
+{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #40454c;
+}
+
+.articlepreview.linex05
+.articlepreview__title
+{
+  font-family: "Open Sans";
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: none;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}

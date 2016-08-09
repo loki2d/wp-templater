@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.5.2 - http://avocode.com -->
+<svg height="334" width="519" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 334">
+    <style type="text/css">
+      
+
+       @font-face {font-family: 'TT Prosto Sans'; font-weight: bold; src: url('/fonts/TTProstoSans/TTProstoSans.eot');src: url('/fonts/TTProstoSans/TTProstoSans.eot?#iefix') format('embedded-opentype'),url('/fonts/TTProstoSans/TTProstoSans.woff2') format('woff2'),url('/fonts/TTProstoSans/TTProstoSans.woff') format('woff'),url('/fonts/TTProstoSans/TTProstoSans.ttf') format('truetype');}
+       @font-face {font-family: 'Open Sans'; font-weight: normal; src: url('/fonts/OpenSans/OpenSansRegular.eot');src: url('/fonts/OpenSans/OpenSansRegular.eot?#iefix') format('embedded-opentype'),url('/fonts/OpenSans/OpenSansRegular.woff') format('woff'),url('/fonts/OpenSans/OpenSansRegular.ttf') format('truetype');}
+        
+      
+    </style>
+    <path fill="#000000" fill-rule="evenodd" d="M 166.57 289.54 L 142.98 289.54 L 142.98 331 L 85.86 331 L 85.86 289.54 L 0.46 289.54 L 0.46 247.06 L 89.52 116.84 L 142.98 116.84 L 142.98 246.33 L 166.57 246.33 L 166.57 289.54 Z M 85.86 246.33 L 85.86 221.43 C 85.86 216.74 86.03 210.42 86.37 202.46 C 86.71 194.5 86.98 190.33 87.17 189.94 L 85.56 189.94 C 82.24 197.46 78.48 204.49 74.28 211.03 L 50.55 246.33 L 85.86 246.33 Z M 336.34 224.21 C 336.34 262.1 330 289.86 317.3 307.49 C 304.61 325.12 285.17 333.93 259 333.93 C 233.41 333.93 214.13 324.73 201.14 306.32 C 188.15 287.91 181.66 260.54 181.66 224.21 C 181.66 186.13 188 158.2 200.7 140.42 C 213.39 122.65 232.83 113.76 259 113.76 C 284.49 113.76 303.75 123.02 316.79 141.52 C 329.83 160.03 336.34 187.59 336.34 224.21 L 336.34 224.21 Z M 239.22 224.21 C 239.22 248.43 240.74 265.08 243.77 274.16 C 246.79 283.25 251.87 287.79 259 287.79 C 266.23 287.79 271.33 283.1 274.31 273.72 C 277.29 264.35 278.78 247.85 278.78 224.21 C 278.78 200.48 277.26 183.86 274.23 174.33 C 271.21 164.81 266.13 160.05 259 160.05 C 251.87 160.05 246.79 164.64 243.77 173.82 C 240.74 183 239.22 199.8 239.22 224.21 L 239.22 224.21 Z M 518.13 289.54 L 494.55 289.54 L 494.55 331 L 437.42 331 L 437.42 289.54 L 352.02 289.54 L 352.02 247.06 L 441.08 116.84 L 494.55 116.84 L 494.55 246.33 L 518.13 246.33 L 518.13 289.54 Z M 437.42 246.33 L 437.42 221.43 C 437.42 216.74 437.59 210.42 437.93 202.46 C 438.27 194.5 438.54 190.33 438.74 189.94 L 437.13 189.94 C 433.8 197.46 430.04 204.49 425.85 211.03 L 402.12 246.33 L 437.42 246.33 Z M 437.42 246.33" />
+    <text font-weight="bold" font-size="23" style="font-family: 'TT Prosto Sans';" fill="#000000" y="30" x="14">
+        <tspan>ТАКОЙ СТРАНИЦЫ НЕТ НА САЙТЕ :(</tspan>
+    </text>
+    <text font-weight="normal" font-size="15" style="font-family: 'Open Sans';" fill="#565d66" y="54" x="35">
+        <tspan>Сожалеем об этом. Убедитесь что вы правильно ввели адрес</tspan>
+    </text>
+</svg>

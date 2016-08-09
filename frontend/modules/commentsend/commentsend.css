@@ -1,0 +1,68 @@
+.commentsend-block{
+  border: none;
+  padding: 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  position: relative;
+  margin-top: 25px;
+  z-index: 25;
+}
+.commentsend-button{
+  padding: 12px 20px;
+  position: relative;
+  border: 1px solid #d2d2d2;
+  background: #fff;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+}
+.commentsend-button::after,
+.commentsend-button::before{
+  content: "";
+  display: block;
+  height: 23px;
+  background: #0083CD;
+  width: 120%;
+  margin-left: -40px;
+  position: absolute;
+  z-index: 1;
+  transition: 0.2s;
+  transform: translateY(-40px);
+}
+.commentsend-button::after{
+  transform: translateY(40px);
+}
+.commentsend-button:hover::before{
+  transform: translateY(-13px);
+}
+.commentsend-button:hover::after{
+  transform: translateY(-10px);
+}
+.commentsend-button:hover{
+  color: white;
+}
+
+.commentsend-button_text{
+  position: relative;
+  z-index: 2;
+}
+
+.commentsend-button_count{
+  position: absolute;
+  right: 0;
+  top: 8px;
+  color: #40454c;
+  line-height: 30px;
+  background: url(/img/icons/countComments.svg) left 7px no-repeat;
+  background-size: 23px auto;
+  padding-left: 33px;
+  display: block;
+  margin: 0 30px;  
+}

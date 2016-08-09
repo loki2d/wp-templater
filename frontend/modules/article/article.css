@@ -1,0 +1,243 @@
+.article{
+  position: relative;
+  width: calc(100% - 340px);
+  z-index: 45;
+  color: #000;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  border-top: 1px solid #d2d2d2;
+  margin-top: -77px;
+  background: #FFFFFF;
+  border-bottom: 0;
+  overflow: visible;
+
+}
+
+.article__body,
+.article-header{
+  position: relative;
+  width: calc(100% - 340px);
+  z-index: 45;
+}
+
+.article-header{
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+  align-items: center;
+  background: #fff;
+  height: 76px;
+  border-bottom: 1px solid #d2d2d2;
+  box-sizing: border-box;
+}
+.article-header:before{
+  content: "";
+  height: 2px;
+  background: #fff;
+  width: 94px;
+  position: absolute;
+  top: 74px;
+  left: 0px;
+}
+.article-header:after{
+  content: "";
+  height: 2px;
+  background: #fff;
+  width: 20px;
+  position: absolute;
+  top: 74px;
+  right: 0px;
+}
+
+.article-header.whith-picture{
+  position: relative;
+}
+
+.article-header__time{
+  color: #fff;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 15px;
+  letter-spacing: .4px;
+  background: #0082cc;
+  padding: 18px 10px 15px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.article-header__tags{
+  color: #565d66;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+}
+
+span.article-header__date-dey,
+span.article-header__date-time{
+  display: block;
+  text-align: center;
+}
+span.article-header__date-time{
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  display: block;
+}
+
+.article-header__tags{
+  font-family: "Open Sans";
+  display: block;
+  width: 100%;
+  color: #565d66;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 1px;
+}
+
+
+.article-header__comments-btn {
+  height: 20px;
+  position: absolute;
+  right: 0px;
+  top: 27px;
+  text-align: right;
+  font-family: "Open Sans";
+  color: #40454c;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 15px;
+  padding-left: 25px;
+  background: url(/img/icons/countComments.svg) left center no-repeat;
+  background-size: 20px 18px;
+  min-height: 19px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.article__body {
+  padding-top: 15px;
+  border-right: 1px solid #d2d2d2;
+}
+
+.article__author{
+  margin: 25px 60px 0 30px;
+  min-height: 8px;
+  position: relative;
+}
+
+.article__author-link{
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.resizeFS{
+  color: #78838f;
+  font-family: "Open Sans";
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 30px;
+  position: absolute;
+  cursor: pointer;
+  right: -40px;
+  top: 0;
+  outline: 0;
+  border: none;
+  background: none;
+
+}
+
+.resizeFS:after{
+  content: "+";
+  display: inline-block;
+  color: inherit;
+}
+
+.article__header{
+  margin: 15px 0 0;
+}
+
+.article__title{
+  margin: 20px 30px 0;
+  color: #000;
+  font-family: "TT Prosto Sans";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: none;
+}
+
+.article__subtitle{
+  margin: 5px 30px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d2d2d2;
+  color: #565d66;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.article__content{
+  margin: 20px 30px;
+
+}
+.article__content .text>*{
+  margin: 15px 0px 0;
+  font-family: "Open Sans";
+}
+
+
+.picture .title {
+  color: #9b9b9b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 17px;
+  padding: 18px 0 15px;
+  border-bottom: 2px solid #d2d2d2;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+}
+.picture .title>span{
+  display: block;
+}
+
+.article-floatTitle{
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  background: white;
+  z-index: 100;
+  transform: translateY(40px);
+  transition: 0.4s;
+  padding: 15px 20px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.article-floatTitle__theme{
+  text-transform: uppercase;
+  color: #9b9b9b;
+  padding-right: 10px;
+}
+
+.article-floatTitle__title{
+  font-size: 14px;
+}
+
+.header.active .topInfo{
+  top:-81px;
+}

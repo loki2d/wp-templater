@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.4.5 - http://avocode.com -->
+<svg height="71" width="71" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 71">
+    <defs>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-1">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="2" dx="0" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="4" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.2 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-2">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="2" dx="0" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="4" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.2 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <path filter="url(#filter-1)" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="4" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 8 6 L 53 6 L 53 51 L 8 51 L 8 6 Z M 8 6" />
+    <path filter="url(#filter-2)" fill="#ffffff" fill-rule="evenodd" d="M 15 14.5 L 46 14.5 L 47.5 14.5 L 47.5 16 L 47.5 41 L 47.5 42.5 L 46 42.5 L 15 42.5 L 13.5 42.5 L 13.5 41 L 13.5 16 L 13.5 14.5 L 15 14.5 L 15 14.5 Z M 28 37.5 C 32.69 37.5 36.5 33.69 36.5 29 C 36.5 24.31 32.69 20.5 28 20.5 C 23.31 20.5 19.5 24.31 19.5 29 C 19.5 33.69 23.31 37.5 28 37.5 L 28 37.5 Z M 28 34.5 C 24.96 34.5 22.5 32.04 22.5 29 C 22.5 25.96 24.96 23.5 28 23.5 C 31.04 23.5 33.5 25.96 33.5 29 C 33.5 32.04 31.04 34.5 28 34.5 L 28 34.5 Z M 37 21 L 37 24 L 43 24 L 43 21 L 37 21 L 37 21 Z M 37 21" />
+</svg>

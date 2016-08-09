@@ -1,0 +1,96 @@
+.logo-container{
+  height: 136px;
+}
+
+.goUpJS{
+  display: block;
+  height: 136px;
+}
+
+/**
+ * logo
+ */
+
+.b-logo {
+  height: 12rem;
+  text-align: center;
+}
+
+.live {
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.button {
+  font-size: 0.7rem;
+  padding: 0.5rem 0.6rem;
+  text-transform: uppercase;
+  color: #000000;
+  background: #d3d5d8;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button.archive {
+  margin: 1rem auto;
+}
+
+.button.later {
+  background: #ffc500;
+}
+
+.logo.ru:after {
+    background: url(/img/kp_sprite.jpg) 0 50% no-repeat;
+    background-size: auto 68px;
+}
+.logo:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 62px;
+    height: 68px;
+    margin-top: -32px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 210px;
+    height: 100%;
+    top: 28px;
+    background: transparent url("/img/LogoKP@2x.svg") no-repeat right center;
+    background-size: 210px 39px;
+    text-indent: -100000px;
+    position: relative;
+    padding-left: 70px;
+}
+
+.logo.eu { padding-left: 0; }
+
+.logo:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    width: 62px;
+    height: 68px;
+    margin-top: -32px;
+    overflow: hidden;
+
+}
+
+    /*.logo.ru:after { background: transparent url("../img/logo-ptichka-ru.png") no-repeat left center; background-size: contain; }*/
+    /****test***/
+    /*.logo.by:after { background: transparent url("../../img/logo-ptichka-by.png") no-repeat left center; background-size: contain; }
+    .logo.md:after { background: transparent url("../../img/logo-ptichka-md.png") no-repeat left center; background-size: contain; }
+    .logo.kg:after { background: transparent url("../../img/logo-ptichka-kg.png") no-repeat left center; background-size: contain; }*/

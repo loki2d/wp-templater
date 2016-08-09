@@ -1,0 +1,29 @@
+.ui-block__hedaer{
+  margin: 20px 10px;
+  padding: 0px 10px;
+  width: 50%;
+  color: #aaa;
+  border-left: 6px solid #cdcdcd;
+}
+
+.ui-block__box{
+  padding: 0px 10px;
+  width: 50%;
+}
+
+.broadcast{
+  width: 100%;
+}
+.broadcast-unit{
+  padding: 20px;
+  display: flex;
+  border-bottom: 1px solid #cdcdcd;
+  margin-bottom: 20px;
+}
+.broadcast-unit__time{
+  margin: 0px 20px 0 0;
+  box-sizing: border-box;
+}
+
+.broadcast-unit__body{
+}

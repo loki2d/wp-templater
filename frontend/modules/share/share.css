@@ -1,0 +1,19 @@
+.shareButton{
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 40px;
+  background: green;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+.shareButton:hover,
+.shareButton:focus{
+  background: red;
+}
+.shareButton:first-child{
+  margin-left: 30px;
+}

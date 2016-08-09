@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.4.5 - http://avocode.com -->
+<svg height="75" width="101" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101 75">
+    <path fill="#ffffff" fill-rule="evenodd" d="M 29.64 7.71 L 41.78 7.71 L 41.78 11.71 L 29.64 11.71 L 29.64 7.71 Z M 29.64 7.71" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 28 2 L 40 2 L 40 6 L 28 6 L 28 2 Z M 28 2" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 28 2 L 32 2 L 32 14 L 28 14 L 28 2 Z M 28 2" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 58.22 7.71 L 70.36 7.71 L 70.36 11.71 L 58.22 11.71 L 58.22 7.71 Z M 58.22 7.71" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 60 2 L 72 2 L 72 6 L 60 6 L 60 2 Z M 60 2" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 68 2 L 72 2 L 72 14 L 68 14 L 68 2 Z M 68 2" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 58.22 36.29 L 70.36 36.29 L 70.36 40.29 L 58.22 40.29 L 58.22 36.29 Z M 58.22 36.29" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 64 38 L 76 38 L 76 42 L 64 42 L 64 38 Z M 64 38" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 64 38 L 68 38 L 68 50 L 64 50 L 64 38 Z M 64 38" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 29.64 36.29 L 41.78 36.29 L 41.78 40.29 L 29.64 40.29 L 29.64 36.29 Z M 29.64 36.29" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 24 38 L 36 38 L 36 42 L 24 42 L 24 38 Z M 24 38" />
+    <path fill="#ffffff" fill-rule="evenodd" d="M 32 38 L 36 38 L 36 50 L 32 50 L 32 38 Z M 32 38" />
+    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-width="4" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 50 30 C 53.31 30 56 27.31 56 24 C 56 20.69 53.31 18 50 18 C 46.69 18 44 20.69 44 24 C 44 27.31 46.69 30 50 30 Z M 50 30" />
+    <text font-weight="400" font-size="12" font-family="Open Sans" fill="#ffffff" y="75" x="0">
+        <tspan>открыть галерею</tspan>
+    </text>
+</svg>

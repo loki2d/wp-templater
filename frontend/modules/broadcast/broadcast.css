@@ -1,0 +1,122 @@
+.broadcast {
+  position: relative;
+  width: calc(100% - 340px);
+  z-index: 45;
+  font-family: "Open Sans";
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  border-bottom: 1px solid #d2d2d2;
+  border-right: 1px solid #d2d2d2;
+
+}
+
+.broadcast__head{
+  padding: 30px 30px 20px 30px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.broadcast__title{
+  color: #565d66;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #565d66;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: "Open Sans";
+}
+
+.broadcast__name{
+  color: black;
+  font-family: "TT Prosto Sans";
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.broadcast__presenter{
+  color: #9b9b9b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  font-family: "Open Sans";
+}
+
+.broadcast__presenter-name{
+  font-size: 12px;
+}
+
+.broadcast-post {
+  border-bottom: 2px solid #d2d2d2;
+  padding: 30px;
+}
+
+.broadcast-post__author{
+  position: relative;
+  padding-left: 70px;
+  min-height: 50px;
+}
+
+.broadcast-post__author-avatar{
+  position: absolute;
+  left: 0;
+  margin-top: -25px;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.broadcast-post__author-name{
+  font-size: 15px;
+  font-family: "Open Sans";
+}
+
+.broadcast-post__author-position{
+  color: #9b9b9b;
+  font-size: 14px;
+}
+
+.broadcast-post__text{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  position: relative;
+  padding-left: 70px;
+  padding-top: 20px;
+}
+.broadcast-post__text{
+  position: relative;
+}
+
+.broadcast-post__date{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  color: #40454c;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 17px;
+}
+
+.broadcast-post__day{
+  display: block;
+  font-weight: 300;
+  zoom: 1;
+}
+
+.broadcast-post__time{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.post__content {
+}

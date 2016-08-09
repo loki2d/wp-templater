@@ -1,0 +1,63 @@
+{
+  "title" : " default template",
+  "name" : "dafault",
+  "templateFile" : "default.jade",
+  "modules" : [
+
+    {
+      "name": "menu",
+      "class" : "Menu",
+      "dataFile": "data.json",
+      "template" : "menu.jade"
+    },
+
+    {
+      "name": "logo",
+      "class" : "Logo",
+      "dataFile": false,
+      "template" : "logo.jade",
+      "options" : {
+        "tag": "div",
+        "className" : "logo-container",
+        "name" : "logo"
+      }
+    },
+
+    {
+      "name": "currency",
+      "class" : "Currency",
+      "template" : "currency.jade"
+    },
+
+    {
+      "name": "regionframe",
+      "class" : "Regionframe",
+      "template" : "regionframe.jade"
+    },
+
+    {
+      "name": "radioframe",
+      "class" : "Radioframe",
+      "template" : "radioframe.jade"
+    },
+
+    {
+      "name": "search",
+      "class" : "Search",
+      "template" : "search.jade"
+    },
+
+    {
+      "name": "menubutton",
+      "class" : "Menubutton",
+      "template" : "menubutton.jade"
+    },
+
+    {
+      "name": "news24",
+      "dataFile": "data.json",
+      "class": "News24List",
+      "template" : "news24.jade"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+.regionframe{
+  margin-left: 15px;
+}
+
+.region_select-title{
+  display: block;
+  padding-left: 41px;
+}
+
+
+/*old style*/
+/******Choose Region******/
+.regionframe button {
+    color: #40454c;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.regionframe button.active { pointer-events: none; cursor: default; color: #9b9b9b; }
+
+.regionframe button:hover, .menuHead .sectionNav li a:hover {
+    color: rgb(86, 93, 102);
+}
+
+.btn_region_select button{
+  border: none;
+  background: transparent;
+}
+
+/***************/
+
+.btn_region_select {
+    min-height: 18px;
+    color: #0083cd;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 25px;
+    display: block;
+    position: relative;
+}
+
+.btn_region_select.ru {
+    background: transparent url("/img/icons/country/map_blue.svg") no-repeat left 5px;
+    background-size: 31px 18px;
+}
+
+.btn_region_select.md {
+    background: transparent url("/img/icons/country-active/md.svg") no-repeat left center;
+    background-size: 16px 21px;
+    padding-left: 21px;
+}
+
+.btn_region_select.eu {
+    background: transparent url("/img/icons/country-active/eu.svg") no-repeat left center;
+    background-size: 20px 14px;
+    padding-left: 25px;
+}
+
+.btn_region_select.by {
+    background: transparent url("/img/icons/country-active/by.svg") no-repeat left center;
+    background-size: 20px 17px;
+    padding-left: 25px;
+}
+
+.btn_region_select:after {
+    -moz-transform: rotate(-30deg); /* Для Firefox */
+    -ms-transform: rotate(-30deg); /* Для IE */
+    -webkit-transform: rotate(-30deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-30deg); /* Для Opera */
+    transform: rotate(-30deg);
+    content: "";
+    display: block;
+    width: 12px;
+    height: 10px;
+    background: transparent url("/img/icons/triangle.svg") no-repeat 0 0;
+    position: absolute;
+    left: 190px;
+    bottom: 5px;
+    opacity: 0;
+}
+
+.btn_region_select.active:after {
+    -moz-transform: rotate(90deg); /* Для Firefox */
+    -ms-transform: rotate(90deg); /* Для IE */
+    -webkit-transform: rotate(90deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(90deg); /* Для Opera */
+    transform: rotate(90deg);
+    opacity: 1;
+}
+
+.chooseRegion .container {
+    position: fixed;
+    width: 487px;
+    left: 50%;
+    margin-left: -243px;
+    top: 50%;
+    margin-top: -328px;
+    background-color: #efefef;
+    border: 1px solid #d2d2d2;
+    padding: 25px 35px;
+}
+
+.chooseRegion h2 {
+    color: black;
+    font-family: "TT Prosto Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 1.78px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.chooseRegion p + ul {
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.chooseRegion li {
+    color: #40454c;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    list-style: none;
+    width: 133px;
+}
+
+.chooseRegion ul + ul li {
+    width: 120px;
+}
+
+.reg0 a { color: inherit; }
+
+.reg0 a {
+    background: transparent url("/img/icons/country/map_grey.svg") no-repeat left center;
+    background-size: 31px 18px;
+    padding-left: 41px;
+}
+
+.reg62 > * {
+    background: transparent url("/img/icons/country/bl.svg") no-repeat left center;
+    background-size: 21px auto;
+    padding-left: 31px;
+}
+
+.reg3 > * {
+    background: transparent url("/img/icons/country/by.svg") no-repeat left center;
+    background-size: 19px auto;
+    padding-left: 31px;
+}
+
+.reg39 > * {
+    background: transparent url("/img/icons/country/bk.svg") no-repeat left center;
+    background-size: 22px auto;
+    padding-left: 31px;
+}
+
+.reg73 > * {
+    background: transparent url("/img/icons/country/kp.svg") no-repeat left center;
+    background-size: 21px auto;
+    padding-left: 31px;
+}
+
+.reg14 > * {
+    background: transparent url("/img/icons/country/md.svg") no-repeat left center;
+    background-size: 16px auto;
+    padding-left: 31px;
+}
+
+.reg47 > * {
+    background: transparent url("/img/icons/country/eu.svg") no-repeat left center;
+    background-size: 14px auto;
+    padding-left: 31px;
+}
+
+.chooseRegion li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu a.active, .chooseRegion a.active {
+    color: #40454C;
+    -webkit-filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    -moz-filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    -ms-filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    -o-filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+    filter:hue-rotate(-10deg) saturate(108) brightness(79%);
+}
+
+.menu nav a:hover, .chooseRegion a:hover { opacity: 0.65; }
+.chooseRegion a.active:hover { opacity: 1; }
+
+.chooseRegion a span { color: inherit; }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Avocode 2.4.5 - http://avocode.com -->
+<svg height="71" width="71" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 71">
+    <defs>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-1">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="2" dx="0" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="4" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.2 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+        <filter height="200%" width="200%" y="-50%" x="-50%" id="filter-2">
+            <feOffset result="shadowOffset1" in="SourceAlpha" dy="2" dx="0" />
+            <feGaussianBlur result="shadowBlur1" in="shadowOffset1" stdDeviation="4" />
+            <feColorMatrix result="shadowMatrix1" in="shadowBlur1" type="matrix" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0   0 0 0 0.2 0" />
+            <feMerge>
+                <feMergeNode in="shadowMatrix1" />
+                <feMergeNode in="SourceGraphic" />
+            </feMerge>
+        </filter>
+    </defs>
+    <path filter="url(#filter-1)" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="4" stroke="#ffffff" fill="none" fill-rule="evenodd" d="M 8 6 L 53 6 L 53 51 L 8 51 L 8 6 Z M 8 6" />
+    <path fill-opacity="0.2" fill="#000000" fill-rule="evenodd" d="M 8 6 L 53 6 L 53 51 L 8 51 L 8 6 Z M 8 6" />
+    <path filter="url(#filter-2)" fill="#ffffff" fill-rule="evenodd" d="M 37.41 31.44 C 35.82 31.44 34.34 32.15 33.36 33.25 L 25.85 29.41 C 25.9 29.19 25.9 28.97 25.9 28.7 C 25.9 28.48 25.9 28.21 25.85 27.99 L 33.41 24.21 C 34.4 25.25 35.82 25.96 37.41 25.96 C 40.42 25.96 42.89 23.49 42.89 20.48 C 42.89 17.47 40.42 15 37.41 15 C 34.4 15 31.93 17.47 31.93 20.48 C 31.93 20.81 31.99 21.14 32.04 21.47 L 24.64 25.14 C 23.66 23.93 22.12 23.16 20.48 23.16 C 17.47 23.16 15 25.63 15 28.64 C 15 31.66 17.47 34.12 20.48 34.12 C 22.18 34.12 23.66 33.36 24.7 32.15 L 32.1 35.93 C 32.04 36.21 32.04 36.53 32.04 36.86 C 32.04 39.88 34.51 42.34 37.52 42.34 C 40.53 42.34 43 39.88 43 36.86 C 42.89 33.85 40.42 31.44 37.41 31.44 L 37.41 31.44 Z M 37.41 31.44" />
+</svg>

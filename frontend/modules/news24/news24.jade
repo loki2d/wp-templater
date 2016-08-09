@@ -1,0 +1,24 @@
+header.news24-header
+  h1.news24-header_text Новости 24
+  button.trigger-range
+.news24-prewive
+  div.news24-prewivelist
+    - each item in items
+      article.news24-prewivelist-item
+        time.news24-prewivelist-item_time= item.time
+        h1.news24-prewivelist-item_title= item.title
+      //- h2.news24-item_subtitle ДТП произошло на проспекте Маршала Жукова
+.news24-detail
+  div.news24-detaillist_control-menu
+    span.news24-detaillist_close-btn
+  div.news24-detaillist
+    - each item in items
+      article.news24-detaillist-item
+        header.news24-detaillist-header
+          time.news24-detaillist-item_time= item.time
+          span.news24-detaillist-item_autor
+            a.news24-detaillist-item_autor-name(href=item.author.link)= item.author.name
+          h1.news24-detaillist-header-title= item.title
+        body.news24-detaillist-body
+          h2.news24-detaillist-header-subtitle= item.subtitle
+          div.news24-detaillist-text !{item.text}
