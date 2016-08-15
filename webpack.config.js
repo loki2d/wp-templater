@@ -100,22 +100,6 @@ module.exports = {
 
   devtool: "cheap-module-eval-source-map",
 
-
-  devServer: {
-    host: "localhost",
-    port: "3000",
-    contentBase: __dirname + '/public',
-    proxy :[
-      {
-        path : /^[^.]+$/,
-        target : "http://localhost:3000/index.html",
-        bypass: function(req, res, options) {
-          return '/index.html';
-        }
-      }]
-    // historyApiFallback : true
-  }
-
 };
 
 

@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "webpack-dev-server",
-    "newpage": "node makepage.js"
+    "server": "node run/webpack-dev-server.js",
+    "newpage": "node run/makepage.js"
   },
   "author": "",
   "license": "ISC",
