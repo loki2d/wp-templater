@@ -41,7 +41,7 @@
     "style-loader": "^0.13.1",
     "webpack-dev-server": "^1.14.1",
     "xml-loader": "^1.1.0",
-    "xmlxslt-loader": "^1.0.0",
+    "xslt-loader": "^1.0.0",
     "xslt": "^0.7.0"
   },
   "description": ""
