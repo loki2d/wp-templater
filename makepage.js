@@ -64,11 +64,15 @@ function generateTemplate() {
 function writeTemplate(config){
 
   var text = "'use strict';\n\n"+
-             "import \"../main.css\";\n"+
+             "import \"../styles/"+config.cssFile+"\";\n"+
              "import {renderLayout} from '../kp';\n\n";
 
   config.modules.forEach(function(mod){
-    text += "import " + mod.class + " from '../modules/"+mod.name+"';\n";
+    if (mod.view){
+      text += "import " + mod.class + " from '../modules/"+mod.name+"/"+mod.view+".js';\n";
+    }else{
+      text += "import " + mod.class + " from '../modules/"+mod.name+"';\n";
+    }
   });
 
     text += "\nimport mainleyout from '../layouts/" + config.templateFile+ "';\n\n";

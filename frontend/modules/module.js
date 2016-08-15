@@ -5,12 +5,15 @@ export default class Module{
       this.elem = document.createElement(options.tag);
       this.elem.className = options.className;
       this.name =  options.name;
+      if (options.place){
+        this.place = options.place;
+      }
     }
   }
 
-  render(selector = false){
-    if (selector){
-      document.querySelector(selector).appendChild(this.elem);
+  render(place = false){
+    if (place || this.place){
+      document.querySelector(place || this.place).appendChild(this.elem);
     }else{
       document.getElementById(`wpm-${this.name}`).appendChild(this.elem);
     }
@@ -18,7 +21,7 @@ export default class Module{
     if (this.insideModules){
       this.renderInsideModules();
     }
-
+    return this;
   };
 
   renderInsideModules(){

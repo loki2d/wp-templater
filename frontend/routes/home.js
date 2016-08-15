@@ -13,6 +13,7 @@ import Search from '../modules/search';
 import MenuButton from '../modules/menubutton';
 import News24List from '../modules/news24';
 import ArticleList from '../modules/articlelist';
+import Notification from '../modules/notification';
 
 import mainleyout from '../layouts/home.jade';
 
@@ -40,4 +41,12 @@ module.exports = function(){
 
   let articleData = require('../modules/articlelist/data.json');
   let articleList = new ArticleList(articleData).render();
+
+  let notificationData = require('../modules/notification/data.json');
+  let notification = new Notification(notificationData).render();
+
+  setTimeout(function(){
+    notification.showNote()
+  }, 5000);
+
 }

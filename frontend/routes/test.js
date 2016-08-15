@@ -1,6 +1,6 @@
 'use strict';
 
-import "../main.css";
+import "../styles/desktop.css";
 import {renderLayout} from '../kp';
 
 import Menu from '../modules/menu';

@@ -1,0 +1,74 @@
+html, body{
+  max-width: 320px;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.wrapper{
+  min-height: 100%;
+}
+
+.m_header{
+  height: 55px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  display: flex;
+  text-align: center;
+}
+
+.m_menu-btn{
+  width: 55px;
+  height: 55px;
+}
+
+.m_logo{
+  height: 55px;
+  width: calc(100% - 110px);
+}
+
+.m_news24-link{
+  height: 55px;
+  width: 55px;
+}
+
+.m_body{
+  width: 320px;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+
+.m_body>section{
+  width: 100%;
+  min-height: 100%;
+}
+
+.m_menu{
+  width: 65%;
+  background: grey;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  min-height: 100%;
+  transition: transformX(-65%);
+}
+
+.m_article-list{
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  background: green;
+}
+
+.m_news24-list{
+  width: 100%;
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  transition: transformX(100%);
+  background: red;
+}

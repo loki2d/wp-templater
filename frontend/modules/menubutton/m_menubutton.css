@@ -1,0 +1,51 @@
+.menubutton-container{
+  width: 55px;
+  height: 55px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  z-index: 45;
+}
+
+.menubutton-button {
+  color: #40454c;
+  width: 55px;
+  height: 55px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  outline: 0;
+  z-index: 45;
+  position: relative;
+
+}
+
+.menubutton-button span.lines,
+.menubutton-button span.lines:after,
+.menubutton-button span.lines:before
+{
+  cursor: pointer;
+  border-radius: 1px;
+  height: 2px;
+  width: 20px;
+  background: #40454C;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 18px;
+  top: 28px;
+}
+
+.menubutton-button span.lines:after{
+  top: 8px;
+  left: 0px;
+}
+
+.menubutton-button span.lines:before{
+  top: -8px;
+  left: 0px;
+}

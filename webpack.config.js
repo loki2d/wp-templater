@@ -85,10 +85,10 @@ module.exports = {
     {
       test: /\.xsl$/,
       loader: 'xmlxslt?name=[name]' //TODO допилить для публикации нужно чтобы loader возвращал функцию как jade-loader
-    },
-    {
-      test: /\.xml|md$/,
-      loader: 'html'
+    // },
+    // {
+    //   test: /\.xml|md$/,
+    //   loader: 'html'
     }
   ]
   },

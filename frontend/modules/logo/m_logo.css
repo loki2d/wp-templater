@@ -1,0 +1,63 @@
+.b-logo {
+  height: 55px;
+  text-align: center;
+}
+
+.live {
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.button {
+  font-size: 0.7rem;
+  padding: 0.5rem 0.6rem;
+  text-transform: uppercase;
+  color: #000000;
+  background: #d3d5d8;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button.archive {
+  margin: 1rem auto;
+}
+
+.button.later {
+  background: #ffc500;
+}
+
+.logo.ru:after {
+    background: url(/img/kp_sprite.jpg) 0 30% no-repeat;
+    background-size: auto 40px;
+}
+.logo:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.logo {
+    height: 40px;
+    background: transparent url("/img/LogoKP@2x.svg") no-repeat right center;
+    background-size: 70% 40px;
+    text-indent: -100000px;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 10px;
+}
+
+.logo.eu { padding-left: 0; }

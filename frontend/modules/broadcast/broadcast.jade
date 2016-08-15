@@ -4,16 +4,6 @@
   .broadcast__presenter Ведущий трансляции: 
     span.broadcast__presenter-name 
       a.broadcast__presenter-link(href=broadcast.presenter.link) #{broadcast.presenter.name}
+  a(name="16:20")
 .broadcast-posts
-  - each item in items
-    .broadcast-post
-      .broadcast-post__author
-        img(src=item.author.avatar).broadcast-post__author-avatar
-        .broadcast-post__author-name= item.author.name
-        .broadcast-post__author-position= item.author.position 
-      .broadcast-post__text
-        time.broadcast-post__date
-          span.broadcast-post__day= item.date.dey
-          span.broadcast-post__time= item.date.time
-        .broadcast-post__content= item.text
-          
+    include broadcast-item.jade

@@ -1,0 +1,20 @@
+.btn-news24 {
+  font-weight: bold;
+  height: 55px;
+  width: 55px;
+  font-family: "Open Sans";
+}
+
+.btn-news24__text {
+  color: red;
+  font-size: 1.4rem;
+  margin-top: 6px;
+  display: block;
+}
+
+.btn-news24__title {
+  font-weight: bold;
+  margin-top: -4px;
+  font-size: 0.5rem;
+  display: block;
+}

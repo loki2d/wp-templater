@@ -2,6 +2,7 @@
   "title" : "home template",
   "name" : "home",
   "templateFile" : "home.jade",
+  "cssFile" : "main.css",
   "modules" : [
 
     {

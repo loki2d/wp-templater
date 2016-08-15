@@ -1,0 +1,36 @@
+{
+  "title" : " default template",
+  "name" : "dafault",
+  "templateFile" : "mobile.jade",
+  "cssFile" : "mobile.css",
+  "modules" : [
+    {
+      "name": "menubutton",
+      "class" : "Menubutton",
+      "view" : "mobile",
+      "place" : ".m_menu-btn"
+    },
+    {
+      "name": "logo",
+      "class" : "Logo",
+      "dataFile": false,
+      "view" : "mobile",
+      "options" : {
+        "tag": "div",
+        "className" : "logo-container",
+        "name" : "logo",
+        "place" : "m_logo"
+      }
+    },
+    {
+      "name": "btn_news24",
+      "class" : "btn_news24",
+      "options" : {
+        "tag": "div",
+        "className" : "btn_news24",
+        "name" : "news24-btn",
+        "place" : ".m_news24-btn"
+      }
+    }
+  ]
+}

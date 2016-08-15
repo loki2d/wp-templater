@@ -1,0 +1,23 @@
+
+- if(items)
+  - each item in items
+    .broadcast-post
+      .broadcast-post__author
+        img(src=item.author.avatar).broadcast-post__author-avatar
+        .broadcast-post__author-name= item.author.name
+        .broadcast-post__author-position= item.author.position 
+      .broadcast-post__text
+        time.broadcast-post__date
+          span.broadcast-post__day= item.date.dey
+          span.broadcast-post__time= item.date.time
+        .broadcast-post__content= item.text
+- else
+  .broadcast-post__author
+    img(src=author.avatar).broadcast-post__author-avatar
+    .broadcast-post__author-name= author.name
+    .broadcast-post__author-position= author.position 
+  .broadcast-post__text
+    time.broadcast-post__date
+      span.broadcast-post__day= date.dey
+      span.broadcast-post__time= date.time
+    .broadcast-post__content= text

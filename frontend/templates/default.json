@@ -2,6 +2,7 @@
   "title" : " default template",
   "name" : "dafault",
   "templateFile" : "default.jade",
+  "cssFile" : "desktop.css",
   "modules" : [
 
     {
