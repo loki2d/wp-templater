@@ -44,7 +44,8 @@ export default class Notification extends Module{
         this.hiddeElement();
       }.bind(this);
     }else{
-      window.location.href = this.link + "#" + this.hash;
+      // window.location.href = this.link + "#" + this.hash;
+      console.log("надо скролл перерисовать");
       return false;
     }
   }
