@@ -25,7 +25,7 @@ module.exports = {
 
 
   entry: {
-    app: ['webpack-dev-server/client?http://localhost:8080','./app']
+    app: ['./app']
   },
 
   output: {
@@ -84,13 +84,26 @@ module.exports = {
     },
     {
       test: /\.xsl$/,
-      loader: 'xmlxslt?name=[name]' //TODO допилить для публикации нужно чтобы loader возвращал функцию как jade-loader
+      loader: 'xslt?name=[name]'
     // },
     // {
     //   test: /\.xml|md$/,
     //   loader: 'html'
     }
   ]
+  },
+
+  devServer : {
+    contentBase: __dirname + '/public',
+    hot: true,
+    proxy :[
+      {
+        path : /^[^.]+$/,
+        target : "http://localhost:3000/index.html",
+        bypass: function(req, res, options) {
+          return '/index.html';
+        }
+      }]
   },
 
   plugins: [

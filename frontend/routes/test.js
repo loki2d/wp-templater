@@ -34,4 +34,7 @@ renderLayout('dafault', mainleyout);
   let news24Data = require("../modules/news24/data.json");
   let news24 = new News24List(news24Data).render();
 
+  alert('sdfasdfasf');
+  console.log(123);
+
 };
