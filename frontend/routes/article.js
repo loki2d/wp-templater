@@ -49,17 +49,31 @@ module.exports = function(){
   let articlePicture = new ArticlePicture(articleData.article.picture).render();
   let article = new Article(articleData).render();
 
-
   let notificationData = require('../modules/notification/data.json');
   let notification = new Notification(notificationData).render();
 
   let broadcastData = require('../modules/broadcast/data.json');
   let broadcast = new Broadcast(broadcastData).render();
 
-  setTimeout(function(){
-    notification.showNote()
-  }, 3000);
+  // к нам сыпится уведомление через wamp
+  let noteData = {
+    id : 123123123,
+    title: "Cборная россии побеждает команду  дании 3:1 после второго периода.",
+    img : "http://s12.stc.all.kpcdn.net/share/i/12/9791325/",
+    url : "/article",
+    hash : "16:20"
+  }
 
+  let noteData2 = {
+    id : 33333333,
+    title: "Крым подаст в суд на Украину за «два десятилетия грабежа",
+    img: "http://s15.stc.all.kpcdn.net/share/i/12/9819459/",
+    url: "/home",
+    hash: "16:20"
+  }
+
+  let note = notification.addNewNotification(noteData);
+  let note2 = notification.addNewNotification(noteData2);
 
   let d = {
     "author": {
@@ -74,6 +88,14 @@ module.exports = function(){
     },
     "text" : "Новое сообщение!!"
   };
-  notification.bindClick(broadcast, d);
 
+
+  setTimeout(function(){
+    notification.showNotification(note);
+    note.bindClick(broadcast, d);
+  }, 3000);
+
+  setTimeout(function(){
+    notification.showNotification(note2);
+  }, 5000);
 }

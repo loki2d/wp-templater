@@ -16,7 +16,7 @@ export default class Broadcast extends Module{
 
   addItem(data){
     let post = document.createElement("div");
-    post.className = "broadcast-post hidden";
+    post.className = "broadcast-post broadcast-post-hidden";
     post.innerHTML = itemTpl(data);
     this.renderPost(post);
   }
@@ -35,10 +35,10 @@ export default class Broadcast extends Module{
   goToHead(post){
       let V = 0.2;  // скорость, может иметь дробное значение через точку
       let w = window.pageYOffset,  // прокрутка
-          t = document.querySelector(".broadcast__head").getBoundingClientRect().top,  // отступ от окна браузера до id
+          t = document.querySelector(".broadcast__head").getBoundingClientRect().top,  // отступ от окна браузера до элемента
           start = null;
       let self = this
-      requestAnimationFrame(step);  // подробнее про функцию анимации [developer.mozilla.org]
+      requestAnimationFrame(step);
       function step(time) {
         if (start === null) start = time;
         var progress = time - start,

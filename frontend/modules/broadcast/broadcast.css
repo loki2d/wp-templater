@@ -19,7 +19,6 @@
 
 .broadcast__title{
   color: #565d66;
-  font-size: 15px;
   font-weight: 700;
   line-height: 25px;
   display: inline-block;
@@ -35,7 +34,6 @@
 .broadcast__name{
   color: black;
   font-family: "TT Prosto Sans";
-  font-size: 15px;
   font-weight: 700;
   line-height: 20px;
   margin-bottom: 10px;
@@ -53,10 +51,13 @@
   font-size: 12px;
 }
 
-.broadcast-post {
+.broadcast-post{
   border-bottom: 2px solid #d2d2d2;
   padding: 30px;
-  transition: 0.5s;
+  transform-origin: top;
+  transform: scaleY(1);
+  transition: transform 0.5s, background 2s;
+  background: #fff;
 }
 
 .broadcast-post__author{
@@ -75,7 +76,6 @@
 }
 
 .broadcast-post__author-name{
-  font-size: 15px;
   font-family: "Open Sans";
 }
 
@@ -85,7 +85,6 @@
 }
 
 .broadcast-post__text{
-  font-size: 15px;
   font-weight: 400;
   line-height: 22px;
   color: black;
@@ -119,13 +118,10 @@
   line-height: 24px;
 }
 
-.post__content {
-}
-
-
-.broadcast-post.hidden{
+.broadcast-post-hidden{
   opacity: 0;
-  height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  transform: scaleY(0);
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #f6f0b7;
 }

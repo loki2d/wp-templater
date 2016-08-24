@@ -1,26 +1,44 @@
-.notification {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
+.notification-box{
   width: 320px;
-  padding: 10px 20px;
-  transform: translateY(400px);
+  position: fixed;
+  right: 50px;
+  bottom: 0;
+  height: auto;
+}
+
+.notification {
+  transform-style: preserve-3d;
+  transform-origin: bottom;
+  transform: perspective(500px) translateY(100px) rotateX(90deg);
   background-position: center center;
   background-size: cover;
   transition: 0.5s;
+  display: block;
+  position: relative;
+  opacity: 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,1);
+  margin-bottom: 20px;
+  max-height: 0;
+  overflow: hidden;
 }
-.notification.active{
-  transform: translateY(0px);
+
+.notification-active{
+  opacity: 1;
+
+  transform: translateY(0px) rotateX(0deg);
+  max-height: 500px;
+  padding: 10px 20px;
 }
 
 .notification__shadow{
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1;
   height: 100%;
   width: 100%;
-  background: rgba(0,0,0,0.4);
+  background: rgb(0,0,0);
+  opacity: 0.4;
 }
 
 .notification__close{
@@ -60,5 +78,5 @@
   font-size: 15px;
   font-family: "Open Sans";
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
