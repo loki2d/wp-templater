@@ -32,6 +32,13 @@ export default class Broadcast extends Module{
     post.className = "broadcast-post"
   }
 
+  brforePostLoad(){
+    let post = document.createElement("div");
+    post.className = "broadcast-post-loading";
+    post.innerHTML = itemTpl(data);
+    this.renderPost(post);
+  }
+
   goToHead(post){
       let V = 0.2;  // скорость, может иметь дробное значение через точку
       let w = window.pageYOffset,  // прокрутка
@@ -47,7 +54,12 @@ export default class Broadcast extends Module{
         if (r != w + t) {
           requestAnimationFrame(step)
         } else {
-          self.renderPostShow(post)
+          self.brforePostLoad();
+
+          setTimeout(function() {
+            self.renderPostShow(post)
+          }, 1000)
+
         }
       }
   }

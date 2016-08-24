@@ -44,9 +44,11 @@ module.exports = function(){
 
   let notification = new Notification().render();
 
+  let noteData = require('../modules/notification/data.json');
+  let note = notification.addNewNotification(noteData);
+  
   setTimeout(function(){
-    let noteData = require('../modules/notification/data.json')
-    notification.showNotification(notification.addNewNotification(noteData));
+    notification.showNotification(note);
   }, 5000);
 
 }
