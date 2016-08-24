@@ -42,11 +42,11 @@ module.exports = function(){
   let articleData = require('../modules/articlelist/data.json');
   let articleList = new ArticleList(articleData).render();
 
-  let notificationData = require('../modules/notification/data.json');
-  let notification = new Notification(notificationData).render();
+  let notification = new Notification().render();
 
   setTimeout(function(){
-    notification.showNote()
+    let noteData = require('../modules/notification/data.json')
+    notification.showNotification(notification.addNewNotification(noteData));
   }, 5000);
 
 }
