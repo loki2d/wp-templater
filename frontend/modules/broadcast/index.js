@@ -12,6 +12,7 @@ export default class Broadcast extends Module{
     this.name = 'broadcast';
     this.list = this.elem.querySelector(".broadcast-posts");
     this.post;
+    this.preloader;
   }
 
   addItem(data){
@@ -22,6 +23,7 @@ export default class Broadcast extends Module{
   }
 
   renderPost(post){
+    this.brforePostLoad();
     let list = this.elem.querySelectorAll('.broadcast-post');
     this.list.insertBefore(post, list[0]);
     this.goToHead(post)
@@ -29,14 +31,20 @@ export default class Broadcast extends Module{
   }
 
   renderPostShow(post){
-    post.className = "broadcast-post"
+
+    setTimeout(function(){  // искуственная задежка для демострации
+      this.preloader.remove();
+      post.className = "broadcast-post";
+    }.bind(this), 1000);
+
   }
 
   brforePostLoad(){
-    let post = document.createElement("div");
-    post.className = "broadcast-post-loading";
-    post.innerHTML = itemTpl(data);
-    this.renderPost(post);
+    this.preloader = document.createElement("div");
+    this.preloader.className = "broadcast-post";
+    this.preloader.innerHTML = "<div class='broadcast-post-loader'><img src='/img/loader.gif' alt='загрузка публикации'></div>";
+    let list = this.elem.querySelectorAll('.broadcast-post');
+    this.list.insertBefore(this.preloader, list[0]);
   }
 
   goToHead(post){
@@ -54,12 +62,7 @@ export default class Broadcast extends Module{
         if (r != w + t) {
           requestAnimationFrame(step)
         } else {
-          self.brforePostLoad();
-
-          setTimeout(function() {
-            self.renderPostShow(post)
-          }, 1000)
-
+          self.renderPostShow(post)
         }
       }
   }

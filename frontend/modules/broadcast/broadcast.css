@@ -54,6 +54,7 @@
 .broadcast-post{
   border-bottom: 2px solid #d2d2d2;
   padding: 30px;
+  height: auto;
   transform-origin: top;
   transform: scaleY(1);
   transition: transform 0.5s, background 2s;
@@ -124,4 +125,10 @@
   padding-top: 0;
   padding-bottom: 0;
   background: #f6f0b7;
+  height: 0;
+}
+
+.broadcast-post-loader {
+  display: block;
+  text-align: center;
 }
