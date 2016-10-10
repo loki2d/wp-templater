@@ -1,7 +1,5 @@
-import './notification.css';
-import template from './notification.jade';
 import Module from '../module.js';
-import notificationUnit from './notificationUnit.js';
+import notificationUnit from '../notificationUnit';
 
 export default class Notification extends Module{
   constructor(options) {

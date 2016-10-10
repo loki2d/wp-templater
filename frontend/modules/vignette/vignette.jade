@@ -1,0 +1,39 @@
+.vignette__steps.vignette__steps_active
+  .vignette__header-pic(style="background-image: url(/img/vignette-head.png")
+  .vignette__user-pic
+  .vignette__template
+    .vignette__template-positions
+      .vignette__postion.vignette__postion-top-left
+      .vignette__postion.vignette__postion-top-center
+      .vignette__postion.vignette__postion-top-right
+      .vignette__postion.vignette__postion-middle-left
+      .vignette__postion.vignette__postion-middle-center
+      .vignette__postion.vignette__postion-middle-right
+      .vignette__postion.vignette__postion-bottom-left
+      .vignette__postion.vignette__postion-bottom-center
+      .vignette__postion.vignette__postion-bottom-right
+
+
+    .vignette__template-blocks
+      .vignette__template-list-wrapper
+        div#carousel
+          .vignette__template-controls
+            .vignette__template-controls-left.vignette__template-arrows
+            .vignette__template-controls-right.vignette__template-arrows
+          ul.vignette__template-list
+            li.vignette__template-content
+              img(src="/img/1.png", alt="test", height = "128px")
+            li.vignette__template-content
+              img(src="/img/2.png", alt="test")
+            li.vignette__template-content
+              img(src="/img/3.png", alt="test")
+
+.vignette__steps.vignette__steps_active
+  h1.vignette-title Выберете фото для размещения
+  .vignette__upload-area
+    .vignette__drop-area
+    .vignette__upload-icon
+    .vignette__upload-description Перетащите изображение с компьютера сюда  или загрузите его, нажав на кнопку
+    form.vignette__upload-form(enctype="multipart/form-data", action="http://kp.ru/catcher/api/1/files/upload", method="post")
+      input.vignette__upload-btn(type="file" id="vignette-file-input" name="file" value="" onCange="alert(1)")
+      button.vignette__upload-btn-decor(type="submit") Загрузить фото

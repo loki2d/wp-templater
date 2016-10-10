@@ -19,7 +19,6 @@ module.exports = function() {
 
   let menuData = require("../modules/menu/data.json");
   new Menu(menuData).render();
-
   new Logo({
     tag: "div",
     className: "logo-container",
@@ -30,7 +29,6 @@ module.exports = function() {
   new Radioframe().render();
   new Search().render();
   new Menubutton().render();
-
   let news24Data = require("../modules/news24/data.json");
   new News24List(news24Data).render();
 };

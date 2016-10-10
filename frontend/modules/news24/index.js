@@ -26,9 +26,9 @@ export default class News24 extends Module{
 
   addCommentsButton(){
     let articles = this.elem.querySelectorAll('.news24-detaillist-item');
-    articles.forEach(function(item) {
+    [].forEach.call(articles, function(item) {
       item.innerHTML+= commentsendTemp();
-    });
+    })
   }
 
   // Открываем список детальных текстов нововстей
@@ -46,13 +46,13 @@ export default class News24 extends Module{
 
   bindOpen(){
     let news24Items = this.elem.querySelectorAll('.news24-prewivelist-item_title');
-    news24Items.forEach(function(item) {
+    [].forEach.call(news24Items, function(item) {
       item.onclick = function(){
         this.openDetail();
-      }.bind(this);
-    }.bind(this))
+        }.bind(this);
+      }.bind(this));
+    }
 
-  }
 
 
 

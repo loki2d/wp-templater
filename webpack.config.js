@@ -7,11 +7,11 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var extractCSS = new ExtractTextPlugin('../style.css');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
-//postCSS
+// postCSS
 var precss       = require('precss');
 var autoprefixer = require('autoprefixer');
 
-//static generator
+// static generator
 
 // const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 

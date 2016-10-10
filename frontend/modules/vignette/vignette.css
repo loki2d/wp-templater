@@ -1,0 +1,171 @@
+.vignette {
+  max-width: 660px;
+  display: block;
+  position: relative;
+  outline: 1px solid #ccc;
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 20px;
+  padding: 30px 30px;
+}
+
+.vignette__steps{
+  display: none;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.vignette__steps_active{
+  display: block;
+}
+
+.vignette-title{
+  font-size: 23px;
+  font-family: "TT Prosto sans";
+  line-height: 35px;
+  letter-spacing: 0.38px;
+  margin-bottom: 20px;
+}
+
+.vignette__upload-area{
+  outline: 1px dashed #9B9B9B;
+  text-align: center;
+  padding: 20px 30px;
+  color: #9B9B9B;
+}
+
+.vignette__upload-area_active{
+  outline: 1px dashed #00ff00;
+}
+
+.vignette__upload-icon{
+  display: block;
+  margin: 0 auto;
+  width: 91px;
+  height: 83px;
+  background: url(/img/icons/upload_img.svg) center center;
+  margin-bottom: 20px;
+}
+
+.vignette__upload-description{
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.vignette__upload-btn-decor{
+  width: 196px;
+  height: 42px;
+  background: #fff;
+  outline: 1px solid #000;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.43px;
+  font-weight: 500;
+  position: relative;
+  z-index: 10;
+}
+
+.vignette__upload-btn{
+  display: block;
+  position: absolute;
+  width: 196px;
+  height: 42px;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.vignette__upload-form{
+  display: block;
+  width: 196px;
+  height: 42px;
+  position: relative;
+  margin: 20px auto 0 auto;
+}
+
+.vignette__header-pic{
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vignette__user-pic{
+  height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+   cursor : move;
+}
+
+
+/*Список темплейтов*/
+
+.vignette__template-blocks:hover
+{
+  background: #000;
+  background: rgba(0,0,0,0.2);
+}
+
+.vignette__template-blocks{
+  width: 300px;
+  height: 168px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: calc(660px/2 - 215px);
+}
+
+.vignette__template-blocks:hover
+.vignette__template-arrows{
+  display: block;
+}
+
+.vignette__template-arrows{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  margin-top: -20px;
+  cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: none;
+  z-index: 1000;
+}
+
+.vignette__template-controls-left{
+  background-image: url(/img/icons/arrow-left.svg);
+  background-position: left;
+  left: 5px;
+}
+.vignette__template-controls-right{
+  background-image: url(/img/icons/arrow-right.svg);
+  background-position: right;
+  right: 5px;
+}
+
+.vignette__template-list-wrapper{
+  display: block;
+  width: 300px;
+  margin:  0 40px;
+  overflow: hidden;
+}
+
+.vignette__template-list{
+  width: 999999px;
+  height: 128px;
+  margin: 25px 0;
+  list-style: none;
+  display: flex;
+  transition: transform 0.3s;
+}
+
+.vignette__template-content{
+  width: 320px;
+  height: 128px;
+  position: relative;
+  /*display: inline-block;*/
+}

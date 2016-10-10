@@ -6,7 +6,6 @@ import {renderLayout} from '../kp';
 import Menu from '../modules/menu';
 import Logo from '../modules/logo';
 import Currency from '../modules/currency';
-import Weather from '../modules/weather';
 import RegionFrame from '../modules/regionframe';
 import RadioFrame from '../modules/radioframe';
 import Search from '../modules/search';
@@ -17,38 +16,36 @@ import Notification from '../modules/notification';
 
 import mainleyout from '../layouts/home.jade';
 
-module.exports = function(){
-
+module.exports = function() {
   renderLayout('home', mainleyout);
 
-  let logo = new Logo({
+  new Logo({
     tag: "div",
-    className : 'logo-container',
-    name : "logo"
+    className: 'logo-container',
+    name: "logo"
   }).render();
 
-  let currency = new Currency().render();
-  let regionframe = new RegionFrame().render();
-  let radioframe = new RadioFrame().render();
-  let search = new Search().render();
+  new Currency().render();
+  new RegionFrame().render();
+  new RadioFrame().render();
+  new Search().render();
+  new MenuButton().render();
 
-  let menuButton = new MenuButton().render();
   let menuData = require("../modules/menu/data.json");
-  let mainMenu = new Menu(menuData).render();
+  new Menu(menuData).render();
 
   let newsData = require('../modules/news24/data.json');
-  let news24 = new News24List(newsData).render();
+  new News24List(newsData).render();
 
   let articleData = require('../modules/articlelist/data.json');
-  let articleList = new ArticleList(articleData).render();
+  new ArticleList(articleData).render();
 
   let notification = new Notification().render();
 
-  let noteData = require('../modules/notification/data.json');
+  let noteData = require('../modules/notificationunit/data.json');
   let note = notification.addNewNotification(noteData);
-  
-  setTimeout(function(){
+
+  setTimeout(function() {
     notification.showNotification(note);
   }, 5000);
-
-}
+};

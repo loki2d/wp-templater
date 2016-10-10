@@ -1,4 +1,4 @@
-.article{
+.article {
   position: relative;
   width: calc(100% - 340px);
   z-index: 45;
@@ -38,7 +38,7 @@
   width: 94px;
   position: absolute;
   top: 74px;
-  left: 0px;
+  left: 0;
 }
 .article-header:after{
   content: "";
@@ -47,7 +47,7 @@
   width: 20px;
   position: absolute;
   top: 74px;
-  right: 0px;
+  right: 0;
 }
 
 .article-header.whith-picture{
@@ -109,7 +109,7 @@ span.article-header__date-time{
 .article-header__comments-btn {
   height: 20px;
   position: absolute;
-  right: 0px;
+  right: 0;
   top: 27px;
   text-align: right;
   font-family: "Open Sans";
@@ -193,7 +193,7 @@ span.article-header__date-time{
 
 }
 .article__content .text>*{
-  margin: 15px 0px 0;
+  margin: 15px 0 0;
   font-family: "Open Sans";
 }
 
@@ -217,8 +217,8 @@ span.article-header__date-time{
   display: block;
   width: 100%;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   height: 20px;
   background: white;
   z-index: 100;

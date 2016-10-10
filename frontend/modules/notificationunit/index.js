@@ -1,3 +1,4 @@
+import './notification.css';
 import template from './notification.jade';
 
 export default class NotificationUnit {
