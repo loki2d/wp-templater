@@ -30,11 +30,11 @@
     line-height: 20px;
     padding: 5px 0 0 0;
     letter-spacing: 0.01em;
-    margin: 0px;
+    margin: 0;
 }
 
 .radioframe p {
-    margin: 0px;
+    margin: 0;
     font-family: "Open Sans", Arial, sans-serif;
     color: #9b9b9b;
     font-size: 12px;

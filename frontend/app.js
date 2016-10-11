@@ -1,15 +1,15 @@
+/* global window */
 "use strict";
 
-let moduleName = location.pathname.slice(1);
+let moduleName = window.location.pathname.slice(1);
 let handler;
 
 try {
-  if (!moduleName){
-    moduleName = "home"
+  if (!moduleName) {
+    moduleName = "home";
   }
   let context = require.context('bundle!./routes/', true, /^\.\//);
   handler = context('./' + moduleName);
-
 } catch (e) {
   console.log(e);
   console.log("No such path");

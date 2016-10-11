@@ -51,7 +51,7 @@ html, body{
   background: grey;
   position: absolute;
   top: 55px;
-  left: 0px;
+  left: 0;
   min-height: 100%;
   transition: transformX(-65%);
 }
@@ -60,7 +60,7 @@ html, body{
   width: 100%;
   position: absolute;
   top: 55px;
-  left: 0px;
+  left: 0;
   background: green;
 }
 
@@ -68,7 +68,7 @@ html, body{
   width: 100%;
   position: absolute;
   top: 55px;
-  left: 0px;
+  left: 0;
   transition: transformX(100%);
   background: red;
 }

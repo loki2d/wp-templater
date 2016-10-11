@@ -1,32 +1,33 @@
-export default class Module{
+/* global document*/
+export default class Module {
 
-  constructor(options){
-    if(options){
+  constructor(options) {
+    if (options) {
       this.elem = document.createElement(options.tag);
       this.elem.className = options.className;
-      this.name =  options.name;
-      if (options.place){
+      this.name = options.name;
+      if (options.place) {
         this.place = options.place;
       }
     }
   }
 
-  render(place = false){
-    if (place || this.place){
+  render(place = false) {
+    if (place || this.place) {
       document.querySelector(place || this.place).appendChild(this.elem);
-    }else{
+    } else {
       document.getElementById(`wpm-${this.name}`).appendChild(this.elem);
     }
 
-    if (this.insideModules){
+    if (this.insideModules) {
       this.renderInsideModules();
     }
     return this;
-  };
+  }
 
-  renderInsideModules(){
+  renderInsideModules() {
     this.insideModules.forEach(function(el) {
-        el.module.render(el.selector);
-    })
+      el.module.render(el.selector);
+    });
   }
 }
